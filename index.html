@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<form action="">
+
+Favorite player <select name="" id="selector">
+  <option value="select player">select player</option>
+  <option value="">Tanim</option>
+  <option value="">Sakib</option>
+  <option value="">watson</option>
+  <option value="">Imrol</option>
+  <option value="">Nayem</option>
+  <option value="">Miraj</option>
+</select>
+ 
+<input type="submit" value="submit" onclick="return valid()">
+</form>
+
+
+ <script>
+
+var s1 = document.getElementById("selector").value;
+
+function valid() {
+
+
+    if (s1 == "select player") {
+        alert("Enter your select player");
+        return false;
+    }
+    return true;
+}
+ </script>
+</body>
+</html>
